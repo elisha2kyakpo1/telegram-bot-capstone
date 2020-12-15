@@ -45,3 +45,18 @@ And then execute:
 Or install it system-wide:
 
 > $ gem install telegram-bot-ruby
+
+## Authors
+
+👤 **Elisha Kyakopo**
+
+- GitHub: [@elisha2kyakpo1](https://github.com/elisha2kyakpo1)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/elisha-kyakopo-009aa3197/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐️ if you like this project!
