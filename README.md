@@ -29,7 +29,7 @@ git clone https://github.com/elisha2kyakpo1/telegram-bot-capstone
 
 __Here is an image to guide you how to use the bot:__
 
-![chatBot](/images/logo.png)
+![chatBot](assets/image/tele.PNG)
 
 
 
