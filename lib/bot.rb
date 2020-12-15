@@ -1,14 +1,38 @@
 require 'telegram/bot'
-require_relative 'jokes.rb'
+require_relative 'quotes.rb'
+require_relative '../bin/main.rb'
 
 class Bot
-  token = '1484024670:AAGpphvzoWo4Ah6vtyjKnwNA7e8sgdXYT9E'
-  def initialize(id)
-    @id = id
+  def instructions
+    "welcome to motivation chat bot created by Elisha Kyakopo,\n
+    the chat bot is to keep you motivated and entertained.\n
+    Use  /start to start the bot,  /stop to end the bot,\n
+    /quotes to get a diffrent motivational quotes"
   end
-  Telegram::Bot::Client.run(token) do |bot|
-    bot.listen do |message|
-      bot.api.send_message(chat_id: message.chat.id, text: "Hello, #{message.from.first_name} the chat bot is to keep you motivated and entertained. Use  /start to start the bot,  /stop to end the bot, /motivate to get a motivational quote or /joke to get a joke ")
+
+  def initialize
+    token = ''
+
+    Telegram::Bot::Client.run(token) do |bot|
+      bot.listen do |message|
+        case message.text
+        when '/start'
+
+          bot.api.send_message(chat_id: message.chat.id, text: "Hello, #{message.from.first_name}" + ' ' + instructions)
+
+        when '/stop'
+
+          bot.api.send_message(chat_id: message.chat.id, text: "Bye, #{message.from.first_name}", date: message.date)
+        when '/quotes'
+          values = Quotes.new
+          value = values.request_quote
+          bot.api.send_message(chat_id: message.chat.id, text: value, date: message.date)
+        else bot.api.send_message(chat_id: message.chat.id, text: "Invalid entry, #{message.from.first_name},'/n'
+          you need to use  /start,  /stop , /motivate or /joke")
+        end
+      end
     end
   end
 end
+
+Bot.new
