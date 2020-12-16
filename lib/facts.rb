@@ -19,6 +19,6 @@ class FactData
   end
 
   def value
-    FACTS[rand(5)]
+    FACTS[rand(4)]
   end
 end
