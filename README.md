@@ -1,6 +1,6 @@
 # twitter-bot-capstone
 
-> ### This bot is designed to send daily motivational messages and tell facts about things you didn't know every time the user types their name
+> ### This bot is designed to send daily motivational messages and tell facts about things you didn't know every time the user types /start
 
 ## Built With
 1.	__Ruby__ 
