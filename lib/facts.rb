@@ -6,16 +6,14 @@ class FactData
     'Microverse is a remote school for software engineers'
   ].freeze
 
-  def initialize
+  def facts_data
     token_value = ENV['API_KEY']
     Telegram::Bot::Client.run(token_value) do |bot1|
       bot1.listen do |message|
-        case message.text
-        when '/facts'
-          f = FactData.new
-          values = f.value
-          bot.api.send_message(chat_id: message.chat.id, text: values, date: message.date)
-        end
+        f = FactData.new
+        values = f.value
+        bot1.api.send_message(chat_id: message.chat.id, text: values, date: message.date)
+        return message.text
       end
     end
   end

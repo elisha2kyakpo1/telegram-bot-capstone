@@ -1,5 +1,6 @@
 require 'telegram/bot'
 require_relative 'quotes.rb'
+require_relative 'facts.rb'
 
 class Bot
   def instructions
@@ -22,7 +23,8 @@ class Bot
           values = Quotes.new
           value = values.request_quote
           bot.api.send_message(chat_id: message.chat.id, text: value, date: message.date)
-
+        when '/facts'
+          FactData.new.facts_data
         else bot.api.send_message(chat_id: message.chat.id, text: "Invalid entry, #{message.from.first_name},\n
           you need to use  /start,  /stop , or /quotes")
         end
