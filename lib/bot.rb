@@ -4,9 +4,9 @@ require_relative 'facts.rb'
 
 class Bot
   def instructions
-    "welcome to motivation chat bot created by Elisha Kyakopo,\n
-    the chat bot is to keep you motivated and entertained.\n
-    Use  /start to start the bot,  /stop to end the bot,\n
+    "welcome to motivation chat bot created by Elisha Kyakopo,
+    The chat bot is to keep you motivated and entertained.
+    Use  /start to start the bot,  /stop to end the bot,
     /quotes to get a diffrent motivational quotes, or /facts to get data about something new"
   end
 
