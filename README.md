@@ -1,4 +1,4 @@
-# twitter-bot-capstone
+# Telegrame-bot-capstone
 
 > ### This bot is designed to send daily motivational messages and tell facts about things you didn't know every time the user types /start
 
@@ -17,7 +17,6 @@ git clone https://github.com/elisha2kyakpo1/telegram-bot-capstone
 ## To use the bot:
 > type cd telegram-bot-capstone 
 ### Followed by:
-> cd bin 
 
 > main.rb
 
@@ -37,21 +36,23 @@ __Here is an image to guide you how to use the bot:__
 Add following line to your Gemfile:
 
 > gem 'telegram-bot-ruby'
+> gem 'json'
+> gem 'net-http-persistent', '~> 2.9', '>= 2.9.4'
+> gem 'telegram-bot-ruby'
 
 And then execute:
 
 > $ bundle
 
-Or install it system-wide:
+You will need an API KEY to communicate with bot
+# Here is one you can use, and don't misuse it.
 
-> $ gem install telegram-bot-ruby
-
-## Authors
+## Author
 
 👤 **Elisha Kyakopo**
 
-- GitHub: [@elisha2kyakpo1](https://github.com/elisha2kyakpo1)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/elisha-kyakopo-009aa3197/)
+- GitHub: [elisha2kyakpo1](https://github.com/elisha2kyakpo1)
+- LinkedIn: [Elisha Kyakopo](https://www.linkedin.com/in/elisha-kyakopo-009aa3197/)
 
 ## 🤝 Contributing
 
