@@ -7,7 +7,8 @@ class Bot
     "welcome to motivation chat bot created by Elisha Kyakopo,
     The chat bot is to keep you motivated and entertained.
     Use  /start to start the bot,  /stop to end the bot,
-    /quotes to get a diffrent motivational quotes, or /reminder to get data about something new"
+		/quotes to get a diffrent motivational quotes, or
+		 /reminder to be remindered of the more important daily goals"
   end
 
   def initialize
