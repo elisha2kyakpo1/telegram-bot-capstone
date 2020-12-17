@@ -20,12 +20,12 @@ class Bot
         when '/stop'
           bot.api.send_message(chat_id: message.chat.id, text: "Bye, #{message.from.first_name}", date: message.date)
         when '/quotes'
-          values = Quotes.new
-          value = values.request_quote
+          value = Quotes.new.request_quote
           bot.api.send_message(chat_id: message.chat.id, text: value, date: message.date)
         when '/reminder'
           remind = Reminder.new.select_random
-          bot.api.send_message(chat_id: message.chat.id, text: "Hello,#{message.from.first_name}" + ' ' + remind, date: message.date)
+          bot.api.send_message(chat_id: message.chat.id,
+                               text: "Hello,#{message.from.first_name}" + ' ' + remind, date: message.date)
         else bot.api.send_message(chat_id: message.chat.id, text: "Invalid entry, #{message.from.first_name},\n
           you need to use  /start,  /stop ,/reminder or /quotes")
         end

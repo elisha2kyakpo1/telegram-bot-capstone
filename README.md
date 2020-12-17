@@ -1,26 +1,27 @@
 # Telegrame-bot-capstone
 
-> ### This bot is designed to send daily motivational messages and tell facts about things you didn't know every time the user types /start
+> ### This bot is designed to send daily motivational messages and remind you about goals you set for the day. When you type /start in the chat, you will get a welcome message and instructions about other options for the bot.
 
 ## Built With
 1.	__Ruby__ 
 2.	__Rubocop__
 3.	__Rspec__
 4.	__telegram-bot-ruby library__
+4. __VS code__
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
 
-Open the terminal and type
+Create a folder, open the terminal and type
 git clone https://github.com/elisha2kyakpo1/telegram-bot-capstone
  
 ## To use the bot:
 > type cd telegram-bot-capstone 
 ### Followed by:
 
-> main.rb
+> bin/main.rb
 
-1. Download telegram on your system
+1. __Download telegram on your system__
 2. search for @morning_motivate_bot to chat with the bot.
 3. Enter /start and follow instructions
 
@@ -36,9 +37,6 @@ __Here is an image to guide you how to use the bot:__
 Add following line to your Gemfile:
 
 > gem 'telegram-bot-ruby'
-> gem 'json'
-> gem 'net-http-persistent', '~> 2.9', '>= 2.9.4'
-> gem 'telegram-bot-ruby'
 
 And then execute:
 
@@ -46,6 +44,9 @@ And then execute:
 
 You will need an API KEY to communicate with bot
 # Here is one you can use, and don't misuse it.
+1484024670:AAGpphvzoWo4Ah6vtyjKnwNA7e8sgdXYT9E
+
+For this key to work, assign it to a token variable in bot.rb initialize method.
 
 ## Author
 
