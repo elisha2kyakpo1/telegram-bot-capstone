@@ -12,7 +12,7 @@ class Bot
   end
 
   def initialize
-    token = ENV['API_KEY']
+    token = '1484024670:AAGpphvzoWo4Ah6vtyjKnwNA7e8sgdXYT9E'
     Telegram::Bot::Client.run(token) do |bot|
       bot.listen do |message|
         case message.text
