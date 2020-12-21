@@ -53,7 +53,7 @@ For this key to work, assign it to a token variable in bot.rb initialize method.
 👤 **Elisha Kyakopo**
 
 - GitHub: [elisha2kyakpo1](https://github.com/elisha2kyakpo1)
-- LinkedIn: [Elisha Kyakopo](https://www.linkedin.com/in/elisha-kyakopo-009aa3197/)
+- LinkedIn: [Elisha Kyakopo](https://www.linkedin.com/in/elisha-kyakopo/)
 
 ## 🤝 Contributing
 
